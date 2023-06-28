@@ -54,7 +54,7 @@ img {
 }
 
 .container {
-  width: 100%;
+  max-width: 428px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -67,14 +67,13 @@ img {
 } */
 /* -------------------------HEADER----------------- */
 .head-container {
-  width: 100%;
+  max-width: 428px;
   display: flex;
   align-items: center;
   flex-grow: 1;
   margin: 0 auto;
 }
 .header {
-  max-width: 428px;
   border-bottom: 1px solid var(--button);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -254,7 +253,7 @@ img {
 }
 .mob-link-tel {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 26px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -273,8 +272,7 @@ img {
   margin-left: 16px;
   margin-bottom: 16px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 56px;
+  gap: 28px;
 }
 .mob-soc-item {
   min-width: 40px;
@@ -295,7 +293,7 @@ img {
 /* ---------------------------MAIN----------------------- */
 
 .section-main {
-  max-width: 428px;
+  max-width: 1440px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -351,7 +349,6 @@ img {
 .text-section {
   padding-top: 96px;
   padding-bottom: 96px;
-  max-width: 428px;
   margin: 0 auto;
 }
 .text {
@@ -417,7 +414,7 @@ img {
 /* -----------------------------TEAM------------------------------- */
 
 .team-container {
-  width: 100%;
+  max-width: 428px;
   /* padding: 0 82px; */
   margin: 0 auto;
   /* display: flex;
@@ -426,7 +423,7 @@ img {
   justify-content: center; */
 }
 .team-section {
-  max-width: 428px;
+  /* max-width: 428px; */
   padding-bottom: 96px;
   padding-top: 96px;
   background-color: var(--second-color);
@@ -545,7 +542,7 @@ img {
   justify-content: center;
 }
 .cust-item {
-  width: 190px;
+  width: 130px;
   height: 88px;
   border-radius: 4px;
 }
@@ -571,16 +568,16 @@ img {
 
 /* -----------------------------FOOTER--------------------------- */
 .footer-container {
-  width: 100%;
+  max-width: 428px;
   padding: 0 15px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .footer {
-  max-width: 428px;
   background-color: var(--color-dark);
   left: 0px;
   top: 2280px;
@@ -1066,20 +1063,27 @@ img {
   .modal {
     width: 408px;
   }
+  .mob-menu-soc-item {
+    gap: 56px;
+  }
+  .cust-item {
+    width: 190px;
+  }
+  .mob-link-tel {
+    font-size: 36px;
+  }
 }
 @media screen and (min-width: 768px) {
-  /* .container,
+  .container,
   .team-container,
   .footer-container {
-    min-width: unset;
-  } */
+    max-width: 768px;
+  }
 
   .menu-toggle {
     display: none;
   }
-  .header {
-    max-width: 768px;
-  }
+
   .nav-list {
     display: flex;
     margin-left: 120px;
@@ -1094,9 +1098,6 @@ img {
     top: 16px;
     padding: 0 0 0 0;
   }
-  .section-main {
-    max-width: 768px;
-  }
   .title-main {
     font-size: 56px;
     max-width: 496px;
@@ -1107,9 +1108,6 @@ img {
   .button {
     margin-top: 36px;
   }
-  .text-section {
-    max-width: 768px;
-  }
   .text-item,
   .team-item {
     width: calc((100% - 24px) / 2);
@@ -1117,15 +1115,9 @@ img {
   .text-list {
     gap: 72px 24px;
   }
-  .team-section {
-    max-width: 768px;
-  }
   .team-list,
   .cust-list {
     gap: 64px 24px;
-  }
-  .customers-section {
-    max-width: 768px;
   }
   .cust-item {
     width: 168px;
@@ -1133,9 +1125,6 @@ img {
 
   .subscribe-input {
     min-width: 264px;
-  }
-  .footer {
-    max-width: 768px;
   }
   .footer-container {
     justify-content: flex-start;
@@ -1165,14 +1154,12 @@ img {
 @media screen and (min-width: 1158px) {
   .container,
   .team-container {
+    max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
   }
   .head-container {
     max-width: 1158px;
-  }
-  .header {
-    max-width: unset;
   }
   .nav-list {
     display: flex;
@@ -1189,7 +1176,6 @@ img {
     padding: 24px 0;
   }
   .section-main {
-    max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1212,7 +1198,6 @@ img {
   .text-section {
     padding-top: 120px;
     padding-bottom: 120px;
-    max-width: 1128px;
   }
   .text-list {
     gap: 24px;
@@ -1231,14 +1216,13 @@ img {
   }
   .img-section {
     display: block;
-    max-width: 1128px;
   }
   .team-container {
     padding: none;
     width: unset;
+    max-width: 1440px;
   }
   .team-section {
-    max-width: 1440px;
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -1275,7 +1259,6 @@ img {
     gap: unset;
   }
   .footer {
-    max-width: 1440px;
     padding: 100px 0;
   }
   .footer-position {
