@@ -56,6 +56,7 @@ img {
 .container {
   width: 100%;
   padding: 0 15px;
+  margin: 0 auto;
 }
 /* .container {
   max-width: 1158px;
@@ -70,12 +71,14 @@ img {
   display: flex;
   align-items: center;
   flex-grow: 1;
+  margin: 0 auto;
 }
 .header {
-  min-width: 428px;
+  max-width: 428px;
   border-bottom: 1px solid var(--button);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  margin: 0 auto;
 }
 
 .nav {
@@ -185,8 +188,8 @@ img {
   overflow-y: scroll;
   top: 0;
   z-index: 2;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: var(--primary-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -265,15 +268,17 @@ img {
   color: var(--text-color);
 }
 .mob-menu-soc-item {
+  max-width: 100%;
   margin-top: 48px;
   margin-left: 16px;
   margin-bottom: 16px;
   display: flex;
+  flex-wrap: wrap;
   gap: 56px;
 }
 .mob-soc-item {
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
 }
 .mob-soc-link {
   display: flex;
@@ -290,7 +295,7 @@ img {
 /* ---------------------------MAIN----------------------- */
 
 .section-main {
-  min-width: 428px;
+  max-width: 428px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -301,7 +306,7 @@ img {
   background-position: center;
   /* background-size: cover; */
   padding: 112px 0;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .title-main {
@@ -346,6 +351,8 @@ img {
 .text-section {
   padding-top: 96px;
   padding-bottom: 96px;
+  max-width: 428px;
+  margin: 0 auto;
 }
 .text {
   font-size: 16px;
@@ -357,6 +364,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+  align-items: center;
+  justify-content: center;
 }
 .text-item {
   width: 100%;
@@ -396,6 +405,7 @@ img {
   padding-bottom: 120px;
   left: 156px;
   top: 1016px;
+  margin: 0 auto;
 }
 .img-list {
   display: flex;
@@ -408,17 +418,26 @@ img {
 
 .team-container {
   width: 100%;
-  padding: 0 82px;
+  /* padding: 0 82px; */
+  margin: 0 auto;
+  /* display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center; */
 }
 .team-section {
-  min-width: 428px;
+  max-width: 428px;
   padding-bottom: 96px;
+  padding-top: 96px;
   background-color: var(--second-color);
+  margin: 0 auto;
 }
 .team-list {
   flex-wrap: wrap;
   display: flex;
   gap: 72px;
+  align-items: center;
+  justify-content: center;
 }
 .team-title {
   font-size: 36px;
@@ -427,7 +446,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-dark);
-  padding-top: 96px;
+
   margin-bottom: 72px;
 }
 .team-three {
@@ -497,12 +516,14 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  max-width: 264px;
 }
 /* ---------------------------CUSTOMERS-------------------------- */
 .customers-section {
-  min-width: 428px;
+  max-width: 428px;
   padding-top: 96px;
   padding-bottom: 96px;
+  margin: 0 auto;
 }
 
 .cust-title {
@@ -559,12 +580,13 @@ img {
 }
 
 .footer {
-  min-width: 428px;
+  max-width: 428px;
   background-color: var(--color-dark);
   left: 0px;
   top: 2280px;
   padding-top: 110px;
   padding-bottom: 82px;
+  margin: 0 auto;
 }
 .footer-position {
   width: 268px;
@@ -656,7 +678,7 @@ img {
   gap: 24px;
 }
 .subscribe-input {
-  min-width: 398px;
+  max-width: 398px;
   height: 40px;
   font-size: 12px;
   line-height: 1.5;
@@ -853,7 +875,7 @@ img {
   left: 50%;
   transform: translate(-50%, -10%) scale(1);
   transition: transform var(--transition);
-  width: 408px;
+  width: 300px;
   min-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -1041,22 +1063,23 @@ img {
   transition: background-color var(--transition);
 }
 @media screen and (min-width: 428px) {
-  .container,
-  .team-container,
-  .footer-container {
-    max-width: 428px;
+  .modal {
+    width: 408px;
   }
 }
 @media screen and (min-width: 768px) {
-  .container,
+  /* .container,
   .team-container,
   .footer-container {
-    max-width: 768px;
-  }
+    min-width: unset;
+  } */
+
   .menu-toggle {
     display: none;
   }
-
+  .header {
+    max-width: 768px;
+  }
   .nav-list {
     display: flex;
     margin-left: 120px;
@@ -1071,6 +1094,9 @@ img {
     top: 16px;
     padding: 0 0 0 0;
   }
+  .section-main {
+    max-width: 768px;
+  }
   .title-main {
     font-size: 56px;
     max-width: 496px;
@@ -1081,6 +1107,9 @@ img {
   .button {
     margin-top: 36px;
   }
+  .text-section {
+    max-width: 768px;
+  }
   .text-item,
   .team-item {
     width: calc((100% - 24px) / 2);
@@ -1088,9 +1117,15 @@ img {
   .text-list {
     gap: 72px 24px;
   }
+  .team-section {
+    max-width: 768px;
+  }
   .team-list,
   .cust-list {
     gap: 64px 24px;
+  }
+  .customers-section {
+    max-width: 768px;
   }
   .cust-item {
     width: 168px;
@@ -1098,6 +1133,9 @@ img {
 
   .subscribe-input {
     min-width: 264px;
+  }
+  .footer {
+    max-width: 768px;
   }
   .footer-container {
     justify-content: flex-start;
@@ -1127,17 +1165,14 @@ img {
 @media screen and (min-width: 1158px) {
   .container,
   .team-container {
-    max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
   }
   .head-container {
-    width: none;
+    max-width: 1158px;
   }
   .header {
-    min-width: unset;
+    max-width: unset;
   }
   .nav-list {
     display: flex;
@@ -1177,6 +1212,7 @@ img {
   .text-section {
     padding-top: 120px;
     padding-bottom: 120px;
+    max-width: 1128px;
   }
   .text-list {
     gap: 24px;
@@ -1195,12 +1231,14 @@ img {
   }
   .img-section {
     display: block;
+    max-width: 1128px;
   }
   .team-container {
     padding: none;
     width: unset;
   }
   .team-section {
+    max-width: 1440px;
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -1208,9 +1246,7 @@ img {
     flex-wrap: nowrap;
     gap: 24px;
   }
-  .team-title {
-    padding-top: unset;
-  }
+
   .team-item-img {
     flex-basis: calc((100% - 24px) / 3);
     width: unset;
@@ -1219,7 +1255,7 @@ img {
   .customers-section {
     padding-top: 120px;
     padding-bottom: 120px;
-    min-width: auto;
+    max-width: 1128px;
   }
   .cust-list {
     flex-wrap: nowrap;
@@ -1232,15 +1268,14 @@ img {
   }
 
   .footer-container {
-    min-width: 1158px;
+    max-width: 1158px;
     margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
     flex-wrap: nowrap;
     align-items: baseline;
+    gap: unset;
   }
   .footer {
-    min-width: unset;
+    max-width: 1440px;
     padding: 100px 0;
   }
   .footer-position {
