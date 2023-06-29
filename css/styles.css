@@ -1119,6 +1119,9 @@ img {
   .cust-list {
     gap: 64px 24px;
   }
+  .customers-section {
+    max-width: unset;
+  }
   .cust-item {
     width: 168px;
   }
