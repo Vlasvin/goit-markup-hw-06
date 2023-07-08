@@ -415,15 +415,9 @@ img {
 
 .team-container {
   max-width: 428px;
-  /* padding: 0 82px; */
   margin: 0 auto;
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center; */
 }
 .team-section {
-  /* max-width: 428px; */
   padding-bottom: 96px;
   padding-top: 96px;
   background-color: var(--second-color);
@@ -721,19 +715,30 @@ img {
 
 /* ------------------------PORTFOLIO--------------------------- */
 .portfolio-section {
-  padding-bottom: 120px;
+  padding-bottom: 48px;
   padding-top: 96px;
+  padding: 48px 0;
+  max-width: 428px;
+  margin: 0 auto;
+}
+.btn-portfolio {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 24px;
+  /* margin-left: 16px;5 */
+  /* flex-basis: calc((100% - 24px) / 2); */
 }
 .btn-list {
   display: flex;
   gap: 24px;
-  flex-direction: row;
-  flex-basis: calc((100% - 24px) / 4);
-  margin-bottom: 72px;
-  margin-left: 271px;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  /* flex-basis: calc((100% - 24px) / 2); */
+  /* margin-bottom: 72px; */
+  /* margin-left: 271px; */
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
 }
 .btn-item {
   transition: var(--transition), border-color var(--transition),
@@ -750,7 +755,8 @@ img {
   background-color: var(--second-color);
   border: 1px solid var(--button);
   border-radius: 4px;
-  padding: 12px 24px 12px 24px;
+  /* padding: 12px 24px 12px 24px; */
+  padding: 8px 16px;
   box-sizing: border-box;
   transition: color var(--transition), background-color var(--transition),
     border-color var(--transition), box-shadow var(--transition);
@@ -774,8 +780,9 @@ img {
 .portfolio-img {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 48px;
+  /* column-gap: 24px; */
+  /* row-gap: 48px; */
   margin-top: 72px;
   box-sizing: border-box;
 }
@@ -800,9 +807,10 @@ img {
   margin-bottom: 8px;
 }
 .portfolio-item {
-  width: 360px;
+  /* width: 360px; */
+  width: 396px;
   box-sizing: border-box;
-  width: calc((100% - 48px) / 3);
+  /* width: calc((100% - 48px) / 3); */
 }
 .portfolio-link {
   display: block;
@@ -1072,6 +1080,13 @@ img {
   .mob-link-tel {
     font-size: 36px;
   }
+  .portfolio-section {
+    max-width: 428px;
+    margin: 0 auto;
+  }
+  .portfolio-item {
+    width: 396px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container,
@@ -1300,5 +1315,11 @@ img {
   }
   .subscribe-input {
     min-width: 264px;
+  }
+  .portfolio-img {
+    flex-wrap: nowrap;
+  }
+
+  @media screen and (min-width: 428px) {
   }
 }
