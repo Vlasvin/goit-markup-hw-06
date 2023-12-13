@@ -1322,6 +1322,7 @@ img {
   }
   .portfolio-img {
     flex-wrap: wrap;
+    gap: 22px;
   }
   .portfolio-item {
     width: calc((100% - 48px) / 3);
